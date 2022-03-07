@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Pretest for Forms and Tables</title>
+
+   <style>
+      span {
+         color: red;
+      }
+
+      table td {
+         padding: 10px 0;
+      }
+   </style>
+
+</head>
+<body>
+   <form action="#" method="">
+      <table> <!-- Add border="1" if you want to see the layout. Border attribute is deprecated in HTML5 -->
+         <tr>
+            <td style="width: 180px"> <!--I added this style to control the width of the first column-->
+               <label for="full-name">Full Name <span>*</span></label>
+            </td>
+            <td>
+               <input type="text" name="first_name" placeholder="First Name" id="full-name" required>
+               <input type="text" name="last_name" placeholder="Last Name" required>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="university">University <span>*</span></label>
+            </td>
+            <td>
+               <!-- name is what PHP will call. value is submitted to PHP. -->
+               <!-- required and value="" works together here. It will prompt 
+                  you to select other <option> if you selected the blank value -->
+               <select name="university" id="university" required>
+                  <option value="" hidden>Select University</option>
+                  <option value="Harvard University">Harvard University</option>
+                  <option value="Oxford University">University of Oxford</option>
+                  <option value="Stanford University">Stanford University</option>
+                  <option value="Oher">Other</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="university-others">If Other - Please Specify</label>
+            </td>
+            <td>
+               <input type="text" name="university_others" id="university-others">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="faculty">Faculty <span>*</span></label>
+            </td>
+            <td>
+               <select name="faculty" id="faculty" required>
+                  <option value="" hidden>Select Faculty</option>
+                  <option value="Faculty of Arts">Faculty of Arts</option>
+                  <option value="Faculty of Engineering">Faculty of Engineering</option>
+                  <option value="Faculty of Philosophy">Faculty of Philosophy</option>
+                  <option value="OtherFaculty">Other Faculty</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="faculty-others">If Other - Please Specify</label>
+            </td>
+            <td>
+               <input type="text" name="faculty_others" id="faculty-others">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="acad-year">Academic year of PhD <span>*</span></label>
+            </td>
+            <td>
+               <select name="acad_year" id="acad-year" required>
+                  <option value="" hidden>Select Year</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label>Where would you like to work?</label>
+            </td>
+            <td>
+               <!-- brackets denote array -->
+               <!-- CHECKBOX: same name for same group; unique id and value -->
+               <input type="checkbox" name="work[]" id="academia" value="Academia">
+                  <label for="academia">Academia</label><br>
+               <input type="checkbox" name="work[]" id="industry" value="Industry">
+                  <label for="industry">Industry</label><br>
+               <input type="checkbox" name="work[]" id="consult" value="Consultancy">
+                  <label for="consult">Consultancy</label><br>
+               <input type="checkbox" name="work[]" id="finance" value="Finance">
+                  <label for="finance">Finance</label><br>
+               <input type="checkbox" name="work[]" id="policy" value="Policy">
+                  <label for="policy">Policy / Government / NGO</label>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="email">E-mail <span>*</span></label>
+            </td>
+            <td>
+               <!-- Use type="email" for both. -->
+               <input type="email" name="email" id="email" placeholder="ex: myname@example.com" style="margin-bottom: 5px;" required><br>
+               <input type="email" name="confirm_email" id="confirm-email" placeholder="Confirm Email" required>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label>Would you like to sign up to our newsletter?</label>
+            </td>
+            <td>
+               <!-- RADIO: same name for same group; unique id and value -->
+               <input type="radio" name="newsletter" id="yes" value="Yes"> 
+                  <label for="yes">Yes</label><br>
+               <input type="radio" name="newsletter" id="no-already" value="NoAlready"> 
+                  <label for="no-already">No, I have already signed up</label><br>
+               <input type="radio" name="newsletter" id="no" value="No">
+                  <label for="no">No</label>
+            </td>
+         </tr>
+         <tr>  
+            <td></td>
+            <td>
+               <!-- You can use either input:submit or button:submit -->
+
+               <!-- <input type="submit" name="submit" value="Submit"> -->
+               <!-- value: what we see -->
+
+               <button type="submit" name="btn_submit" value="Value of Button">Submit</button>
+            </td>
+         </tr>
+      </table>
+   </form>
+</body>
+</html>

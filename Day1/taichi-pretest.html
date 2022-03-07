@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            box-sizing: content-box;
+        }
+        span {
+            color: red;
+        }
+        .content {
+            margin-bottom: 1rem;
+        }
+        .label {
+            width:20%;
+            display: block;
+            box-sizing: content-box;
+            float: left;
+        }
+        .label .input {
+            margin-bottom: 1%;
+        }
+        .input .radio .mail .select .check{
+            display: block;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pretest</title>
+</head>
+<body>
+    <form method="POST">
+        <div class="content">
+            <div class="label">
+                <label for="Full_Name">Full Name <span>*</span></label>
+            </div>
+            <div class="input">
+                <input type="text" name="First_Name" placeholder="First_Name" required>
+                <input type="text" name="Last_Name" placeholder="Last_Name" required>
+            </div>
+        </div>
+        <div class="content">
+            <div class="label">
+                <label for="University">University <span>*</span></label>
+            </div>
+            <div class="input">
+                <select name="University">
+                    <option hidden selected required>Select University</option>
+                    <option value="A_University" required>A University</option>
+                    <option value="B_University" required>B University</option>
+                    <option value="C_University" required>C University</option>
+                </select>
+            </div>
+        </div>
+        <div class="content">
+            <div class="label">
+                <label for="University">If Other - Please Specify</label>
+            </div>
+            <div class="input">
+                <input type="text" name="otherUniversity">
+            </div>
+        </div>
+        <div class="content">
+            <div class="label">
+                <label for="Faculty">Faculty <span>*</span></label>
+            </div>
+            <div class="input">
+                <select name="Faculty" required>
+                    <option hidden selected required>Select Faculty</option>
+                    <option value="Faculty_A" required>Faculty of A</option>
+                    <option value="Faculty_B" required>Faculty of B</option>
+                    <option value="Faculty_C" required>Faculty of C</option>
+                </select>
+            </div>
+        </div>
+        <div class="content">
+            <div class="label">
+                <label for="Faculty">If Other - Please Specify</label>
+            </div>
+            <div class="input">
+                <input type="text" name="OtherFaculty">
+            </div>
+        </div>
+        <div class="content">
+            <div class="label">
+                <label for="PhDYear">Academic year of PhD <span>*</span></label>
+            </div>
+            <div class="input">
+                <div class="select">
+                    <select name="PhDYear">
+                        <option hidden selected required>Select Year</option><!-- hiddenを入れると選択肢からなくなる -->
+                        <option value="2023" required>2023</option>
+                        <option value="2022" required>2022</option>
+                        <option value="2021" required>2021</option>
+                        <option value="2020" required>2020</option>
+                        <option value="2019" required>2019</option>
+                        <option value="2018" required>2018</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="label">
+                <label for="Wwyltw">Where would you like to work?</label>
+                <br><br><br><br>
+            </div>
+            <div class="input">
+                <!-- リストを使った方がいい -->
+                <div class="check">
+                    <label>
+                    <input type="checkbox" name="Wwyltw" value="Academia">
+                      Academia
+                    </label><br>
+                    <label>
+                      <input type="checkbox" name="Wwyltw" value="Industry">
+                      Industry
+                    </label><br>
+                    <label>
+                      <input type="checkbox" name="Wwyltw" value="Consultancy">
+                      Consultancy
+                    </label><br>
+                    <label>
+                      <input type="checkbox" name="Wwyltw" value="Finance">
+                      Finance
+                    </label><br>
+                    <label>
+                      <input type="checkbox" name="Wwyltw" value="Policy / Goverment / NGO">
+                      Finance
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="label">
+                <label for="E-mail">E-mail <span>*</span></label>
+                <br><br>
+            </div>
+            <div class="input">
+                <div class="mail">
+                    <input type="mail" name="E-mail" placeholder="ex: myname@example.com" required>
+                    <br>
+                    <input type="mail" name="ConfirmEmail" placeholder="Confirm Email" required>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="label">
+                <label for="newsletter">Would you like to sign up to our newsletter?</label>
+                <br><br>
+            </div>
+            <div class="input">
+                <div class="radio">
+                    <input type="radio" name="newsletter" value="Yes">Yes
+                    <br>
+                    <input type="radio" name="newsletter" value="already">No, I have already signed up
+                    <br>
+                    <input type="radio" name="newsletter" value="No">No
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="label">
+                <br>
+            </div>
+            <div class="input">
+                <input type="submit" name="submit" id="submit" value="submit">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
