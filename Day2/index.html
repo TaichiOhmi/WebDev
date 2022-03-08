@@ -32,12 +32,25 @@
     </div>
 
     <!-- displayを利用すると、ブレークポイントに応じて表示・非表示の切り替えのほか、色々なdisplay設定をすることができる。 -->
-    <h1 class="visible-xs" style="color:rgb(182, 26, 161);">Displayed with width less than 767px</h1>
-    <h1 class="hidden-xs" style="color:rgb(164, 165, 82);">Hide when width is less than 767px</h1>
+    <!-- https://getbootstrap.jp/docs/5.0/utilities/display/ -->
     <h2 class="d-none d-sm-block">Displayed in SM (576px) size or larger</h2>
     <h2 class="d-none d-md-block">Displayed in MD (768px) size or larger</h2>
     <h2 class="d-none d-lg-block">Displayed in LG (992px) size or larger</h2>
     <h2 class="d-none d-xl-block">Displayed in XL (1200px) size or larger</h2>
+    <!-- Hidden on all	.d-none
+    Hidden only on xs	.d-none .d-sm-block
+    Hidden only on sm	.d-sm-none .d-md-block
+    Hidden only on md	.d-md-none .d-lg-block
+    Hidden only on lg	.d-lg-none .d-xl-block
+    Hidden only on xl	.d-xl-none .d-xxl-block
+    Hidden only on xxl	.d-xxl-none
+    Visible on all	.d-block
+    Visible only on xs	.d-block .d-sm-none
+    Visible only on sm	.d-none .d-sm-block .d-md-none
+    Visible only on md	.d-none .d-md-block .d-lg-none
+    Visible only on lg	.d-none .d-lg-block .d-xl-none
+    Visible only on xl	.d-none .d-xl-block .d-xxl-none
+    Visible only on xxl	.d-none .d-xxl-block -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
