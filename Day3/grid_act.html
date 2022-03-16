@@ -1,78 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Grid Act</title>
-</head>
-<body>
-  <nav class="navbar navbar-expand-sm bg-success">
-    <div class="container-fluid" >
-      <a class="navbar-brand" href="#">
-        <i class="fa-solid fa-bullhorn text-white"></i>
-      </a>
-      <button class="navbar-toggler text-white" data-bs-toggle="collapse" data-bs-target="#navbar-nav">
-        <span class="navbar-toggle-icon"> <i class="fa-solid fa-bars fs-2"></i>
-        </span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar-nav" >
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link text-white-50" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  text-white-50" href="#">contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  text-white-50" href="#">about us</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link  text-white-50" href="#">Log out</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-  <div class="container-md w-75 my-5">
-    <div class="row" style="height:100px;">
-         <div class="col bg-success text-white"><h1>Hello!</h1></div>
-         <div class="col bg-warning"></div>
-         <div class="col bg-secondary"></div>
-    </div>
-    <div class="row" style="height:100px;">
-        <div class="col-8 bg-secondary text-white">col-8</div>
-        <div class="col-4">
-            <div class="row">
-                <div class="col bg-info" style="height:50px;"></div>
-                <div class="col bg-danger" style="height:50px;"></div>
-            </div>
-            <div class="row">
-                <div class="col bg-danger" style="height:50px;"></div>
-                <div class="col bg-info" style="height:50px;"></div>
-            </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Grid Act</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- navbar-expand-sm(576px and above):   -->
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+
+      <!-- container -->
+      <div class="container-fluid">
+          
+        <!-- navbar-brand -->
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-bullhorn text-white"></i>
+        </a>
+
+        <!-- collapse link or button -->
+
+        <!-- Link version -->
+        <!-- <a class="btn text-white shadow-none" data-bs-toggle="collapse" href="#navbar-nav" role="button" aria-expanded="false" aria-controls="#navbar-nav">
+            <span class="navbar-toggle-icon"> <i class="fa-solid fa-bars fs-2"></i></span>
+        </a> -->
+
+        <!-- Button version -->
+        <!-- data-bs-target == target id -->
+        <button
+          class="navbar-toggler text-white shadow-none"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-nav"
+        >
+          <span class="navbar-toggle-icon">
+            <i class="fa-solid fa-bars fs-2"></i>
+          </span>
+        </button>
+
+        <!-- /collapse link or button -->
+
+        <!-- navbar-collapse  -->
+        <div class="collapse navbar-collapse" id="navbar-nav">
+          <!-- navbar-nav -->
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">about us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Log out</a></li>
+          </ul>
+          <!-- /navbar-nav -->
+
         </div>
-    </div>
-    <div class="row" style="height:100px;">
+        <!-- /navbar-collapse -->
+
+      </div>
+
+    </nav>
+    <!-- /Navbar -->
+
+    <!-- Grid -->
+    <div class="container-md w-75 my-5">
+
+      <div class="row" style="height: 100px">
+        <div class="col bg-success text-white"><h1>Hello!</h1></div>
+        <div class="col bg-warning"></div>
+        <div class="col bg-secondary"></div>
+      </div>
+
+      <div class="row" style="height: 100px">
+        <div class="col-8 bg-secondary text-white">col-8</div>
+
+        <div class="col-4">
+          <div class="row">
+            <div class="col bg-info" style="height: 50px"></div>
+            <div class="col bg-danger" style="height: 50px"></div>
+          </div>
+          <div class="row">
+            <div class="col bg-danger" style="height: 50px"></div>
+            <div class="col bg-info" style="height: 50px"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row" style="height: 100px">
         <div class="col-5 bg-warning">col-5</div>
-        <div class="col-7 bg-success text-warning"><h2>BootStrap Grid System</h2></div>
+        
+        <div class="col-7 bg-success text-warning">
+          <h2>BootStrap Grid System</h2>
+        </div>
+      </div>
+
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+    <!-- /Grid -->
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
