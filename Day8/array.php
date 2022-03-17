@@ -17,21 +17,49 @@
 
     // $name[3] = $name[0];
 
-// echo $name[0];
-// echo $name[1];
-// echo $name[2];
-// echo $name[3];
+    // echo $name[0];
+    // echo $name[1];
+    // echo $name[2];
+    // echo $name[3];
 
-    foreach($name as $n){
-        echo "$n <br>";
-    }
-    for($i = 0; $i<count($name); $i++){
-        echo $name[$i];
-    }
-    $person = ["name" => "Tony", "age" => 40, "gender" => "male"];
-    echo $person["name"];
-    $person['"age"] = 35;
+    // foreach($name as $n){
+    //     echo "$n <br>";
+    // }
 
+    // echo "<hr>";
+    // $name[2] = 'Ned';
+    // $name[0] = $name[3];
+
+    // foreach($name as $n){
+    //     echo "$n <br>";
+    // }
+    // for($i = 0; $i<count($name); $i++){
+    //     echo $name[$i];
+    // }
+    // $person = ["name" => "Tony", "age" => 40, "gender" => "male"];
+    // echo $person["name"];
+    // $person["age"] = 35;
+
+    $market = array(
+        "round" => array("fruit1" => "Orange", "fruit2" =>"Grapes"),
+        "yellow" => array("fruit3" => "Banana", "fruit4" =>"Mango")
+    );
+
+    foreach($market as $outerkey => $fruits){ 
+        echo $outerkey .'<br>';
+
+        foreach( $fruits as $innerkey => $value){
+            echo $innerkey .', '. $value .', ';
+        }
+        
+        echo '<hr>';
+    }
+
+    foreach($market['round'] as $fruit){
+        echo $fruit . '<br>';
+    }
+
+    
 
 
 ?>
