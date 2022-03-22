@@ -1,0 +1,30 @@
+select * from subject
+
+SELECT subject_code, subject_title FROM `subject`
+SELECT * FROM `subject` WHERE subject_code = 1234502
+SELECT * FROM `subject` WHERE unit > 3
+SELECT * FROM `subject` WHERE subject_description like "Calculus"
+SELECT * FROM `subject` WHERE subject_title like "IT%"
+SELECT * FROM `subject` WHERE subject_title like "%ing%"
+SELECT * FROM `subject` WHERE subject_title like "ing%"
+SELECT * FROM `subject` WHERE subject_title like "%ing%" order by subject_code
+Update subject set unit = 3 where subject_title like "IT%"
+delete from subject where subject_title like "%Math%"
+SELECT SUM(unit) as "sum of units" FROM subject;
+Select COUNT(subject_title) as "Programming Subjects" from subject where subject_title like "%Programming%"
+SELECT MAX(Salary) as "Salary", first_name, last_name FROM employee
+SELECT MIN(Salary) as "Salary", first_name, last_name FROM employee
+SELECT COUNT(*) FROM employees WHERE department = "Technology"
+
+SELECT * FROM Person2 WHERE street LIKE "%AVE%"
+SELECT * FROM Person2 ORDER BY first_name DESC
+SELECT * FROM Person WHERE email LIKE "%msn%"
+SELECT * FROM `Person` WHERE email LIKE "%hotmail%"
+SELECT * FROM `Person` WHERE email LIKE "%yahoo%"
+SELECT * FROM `Person` WHERE email LIKE "%gmail%"
+SELECT * FROM `Person` WHERE email LIKE "%aol%"
+
+
+Update Person set phone = "123456789" WHERE state = "CA"
+DELETE FROM Person WHERE zip_code > 50000
+SELECT * FROM Person WHERE state = "NY" ORDER BY city ASC
