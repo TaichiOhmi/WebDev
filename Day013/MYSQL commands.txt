@@ -1,0 +1,44 @@
+select * from subject
+
+SELECT subject_code, subject_title FROM `subject`
+SELECT * FROM `subject` WHERE subject_code = 1234502
+SELECT * FROM `subject` WHERE unit > 3
+SELECT * FROM `subject` WHERE subject_description like "Calculus"
+SELECT * FROM `subject` WHERE subject_title like "IT%"
+SELECT * FROM `subject` WHERE subject_title like "%ing%"
+SELECT * FROM `subject` WHERE subject_title like "ing%"
+SELECT * FROM `subject` WHERE subject_title like "%ing%" order by subject_code
+Update subject set unit = 3 where subject_title like "IT%"
+delete from subject where subject_title like "%Math%"
+SELECT SUM(unit) as "sum of units" FROM subject;
+Select COUNT(subject_title) as "Programming Subjects" from subject where subject_title like "%Programming%"
+SELECT MAX(Salary) as "Salary", first_name, last_name FROM employee
+SELECT MIN(Salary) as "Salary", first_name, last_name FROM employee
+SELECT COUNT(*) FROM employees WHERE department = "Technology"
+SELECT * FROM employee where salary > 30000 order by salary DESC limit 2
+
+Joins
+Joining 2 tables using inner join
+SELECT employee.First_Name as "Employee Name", Department.Department_name as "Department" from employee INNER JOIN department ON employee.department = department.dept_num
+
+Joining 3 tables using inner join
+SELECT employee.last_name as "employee", department.Department_name as "department", area.Floor as "Floor", area.Bldg as "Building", area.Room as "Room" from employee inner join department on employee.Department = department.Dept_Num inner join area on department.Area = Area.Area_num;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
