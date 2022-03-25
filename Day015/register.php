@@ -13,7 +13,7 @@
     </style>
 </head>
 <?php
-ini_set("display_errors", "On");
+    ini_set("display_errors", "On");
     require_once('connection.php');
 
     function RegisterAccounts($conn, $username, $password){
@@ -104,6 +104,7 @@ ini_set("display_errors", "On");
                     <p class="small">Have an account?<a href="login.php">Sign in</a></p>
                 </div>
             </div>
+        </form>
     </div>
 
 
