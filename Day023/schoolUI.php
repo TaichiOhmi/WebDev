@@ -54,10 +54,11 @@
             $labofee = $_POST['labofee'];
 
             $school->set_data($name, $ylevel, $units, $labofee);
+
         ?>
         <div class="row alert alert-warning" role="alert">
             Name: <?= $school->get_name() ?><br>
-            Total Tuition is: <?= $school->calculate() ?>
+            Total Tuition is: <?= $school->calc_total_tuition() ?><br>
         </div>
         <?php
         }
