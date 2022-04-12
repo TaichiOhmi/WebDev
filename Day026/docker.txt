@@ -1,0 +1,12 @@
+Docker is a tool for running applications and services in small, lightweight containers which do not interfere with your local computer’s installed software or configuration.
+Dockerは、アプリケーションやサービスを小さく軽量なコンテナで実行するためのツールで、ローカルコンピュータにインストールされているソフトウェアや設定に干渉することはありません。
+
+・Already includes everything that we need to run an app
+アプリを動かすのに必要なものが既に全て入っている
+・Multiple containers can run on the same machine and OS at the same time. 
+複数のコンテナを同一マシン、同一OS上で同時に動作させることができる。
+・Portable
+ポータブル
+・Industry standard
+業界標準
+

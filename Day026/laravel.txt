@@ -1,0 +1,16 @@
+Laravel is a PHP web framework that uses the MVC architecture.
+ララヴェルはMVCアーキテクチャを採用したPHPフレームワーク
+
+A Progressive Framework プログレッシブ・フレームワーク
+ • Good for beginners in web dev because of detailed documentation, guides, and video tutorials.
+ - 詳細なドキュメント、ガイド、ビデオチュートリアルがあるため、Web制作の初心者におすすめ
+
+Powerful built-in features　強力な組み込み機能
+• MVC, Artisan CLI, Blade Template Engine, etc.
+- MVC(Model,View,Controller)、Artisan CLI、Blade Template、エンジンなど
+
+A Community Framework コミュニティフレームワーク
+• It is written in PHP so many developers are already familiar with it.
+- PHPで書かれているため、多くの開発者はすでに精通しています。
+• Encourages you to follow the best practices in web dev.
+- ウェブ開発におけるベストプラクティスに従うことを推奨します。
