@@ -1,6 +1,12 @@
+{{-- 
+    docker-compose exec app php artisan vendor:publish --tag=laravel-pagination
+    このコマンドでこのファイルを作り、編集することでpaginationの見た目を変更
+--}}
+
+
 @if ($paginator->hasPages())
-    <nav>
-        <ul class="pagination d-flex flex-wrap">
+    <nav class="mt-5">
+        <ul class="pagination mb-1 justify-content-center">
             {{-- Previous Page Link --}}
             @if ($paginator->onFirstPage())
                 <li class="page-item disabled" aria-disabled="true" aria-label="@lang('pagination.previous')">
