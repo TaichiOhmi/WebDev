@@ -1,0 +1,9 @@
+メソッド    ：	意味    ：	CRUD分類
+OPTION：サーバー側が提供する機能の確認：READ
+GET　：	リソースの取得　：	READ
+HEAD　：　リソースのヘッダー(メタ情報)取得	：　READ
+POST	従属リソースの作成	CREATE
+PUT/PATCH	：　新規リソースの作成、リソースの更新　：	UPDATE
+DELETE　：	リソースの削除　：	DELETE
+TRACE　：	通信経路の確認　：	READ
+CONNECT　：	プロキシのトンネル接続　：	READ
