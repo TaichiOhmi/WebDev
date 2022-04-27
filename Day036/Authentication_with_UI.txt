@@ -1,0 +1,20 @@
+1. Check if you have node.js and npm installed in your computer. 
+    Open a terminal:
+    a. node -v
+    b. npm -v
+    c. If “command not found”, install Node.js before proceeding.
+
+2. $ docker-compose exec app composer require laravel/ui
+
+3. $ docker-compose exec app php artisan ui bootstrap --auth
+
+4. $ cd backend
+
+5. $ npm install
+
+6. $ npm run dev
+    a. Install NPM
+    b. To install additional dependencies.
+
+7. $ npm run dev
+    a. Run again to start compiling and building.
