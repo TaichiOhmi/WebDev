@@ -1,0 +1,2 @@
+pagination design
+docker-compose exec app php artisan vendor:publish --tag=laravel-pagination
