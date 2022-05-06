@@ -1,0 +1,13 @@
+.nav-icon {
+    font-size: 2.1rem;
+}
+
+/* title.blade.php */
+.user-icon{
+    font-size:2.1rem;
+}
+
+/* body.blade.php */
+i.fa-heart{
+    font-size:1.5rem;
+}
